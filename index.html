@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;600&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Tabbed Login and Sign up Form</title>
+  </head>
+  <body class="container">
+    <div class="grid app">
+      <div class="grid-btn">
+        <a href="#" class="btn active--btn" data-tab="1">Sign Up</a>
+        <a href="#" class="btn not--active" data-tab="2">Login</a>
+      </div>
+
+      <div class="signup form form--1 active--content">
+        <h2 class="signup--title mg-b-lg">Sign Up</h2>
+        <p class="signup--text mg-b-xlg">
+          Become a member - enjoy our services with most updated features.
+        </p>
+
+        <label for="name" class="mg-b-sm"
+          >Name<sup class="important">*</sup></label
+        >
+        <input
+          type="text"
+          name=""
+          id="name"
+          class="mg-b-lg"
+          placeholder="John Doe"
+        />
+
+        <label for="email" class="mg-b-sm"
+          >Email<sup class="important">*</sup></label
+        >
+        <input
+          type="email"
+          name=""
+          id="email"
+          class="mg-b-lg"
+          placeholder="example@mail.com"
+        />
+
+        <label for="password" class="mg-b-sm"
+          >Password<sup class="important">*</sup></label
+        >
+        <input
+          type="password"
+          name=""
+          id="password"
+          class="mg-b-lg"
+          placeholder="Enter your password"
+        />
+
+        <!--
+
+        <label for="retypepassword" class="mg-b-sm"
+          >Retype Password<sup class="important">*</sup></label
+        >
+        <input
+          type="password"
+          name=""
+          id="retypepassword"
+          class="mg-b-lg"
+          placeholder="Retype your password"
+        />
+
+        -->
+
+        <div class="flex mg-b-lg">
+          <input type="checkbox" name="privacy" id="privacy--signup" />
+          <label for="privacy--signup">I agree with Terms and Privacy</label>
+        </div>
+
+        <button class="signup--btn mg-b-lg">Sign Up</button>
+        <p>Alread have an account? Log in</p>
+      </div>
+
+      <div class="signup form form--2">
+        <h2 class="signup--title mg-b-lg">Log in</h2>
+        <p class="signup--text mg-b-xlg">
+          Login to your account - enjoy exclusive features and many more.
+        </p>
+
+        <label for="mail" class="mg-b-sm"
+          >Email<sup class="important">*</sup></label
+        >
+        <input
+          type="email"
+          name=""
+          id="mail"
+          class="mg-b-lg"
+          placeholder="example@mail.com"
+        />
+
+        <label for="pass" class="mg-b-sm"
+          >Password<sup class="important">*</sup></label
+        >
+        <input
+          type="password"
+          name=""
+          id="pass"
+          class="mg-b-lg"
+          placeholder="Enter your password"
+        />
+
+        <div class="flex mg-b-lg">
+          <div>
+            <input type="checkbox" name="" id="remember" />
+            <label for="remember">Remember me</label>
+          </div>
+          <p class="forget--pass">Forget password?</p>
+        </div>
+
+        <button class="signup--btn mg-b-lg">Log in</button>
+
+        <p>Don't have an account? Sign up</p>
+      </div>
+    </div>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
